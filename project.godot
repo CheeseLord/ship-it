@@ -15,7 +15,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Test 001 -greg-start"
+config/name="Ship It"
 config/icon="res://icon.png"
 
 [display]
