@@ -15,8 +15,13 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Ship-it"
+config/name="Test 001 -greg-start"
 config/icon="res://icon.png"
+
+[display]
+
+window/size/width=450
+window/size/height=800
 
 [rendering]
 
