@@ -3,16 +3,17 @@ extends Area2D
 signal hit
 
 
-# Declare member variables here. Examples:
-export var speed  = 600 # pixels/sec
+export (PackedScene) var PlayerBullet
+export var speed = 600  # pixels/sec
 export var radius_x = 64 / 2
 export var radius_y = 64 / 2
-var screen_size # size of game window
+var screen_size  # size of game window
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	screen_size = get_viewport_rect().size
+	$BulletTimer.start()
 	#hide()
 
 
@@ -47,3 +48,9 @@ func _on_Player_body_entered(_body):
 #	hide()
 	emit_signal("hit")
 #	$CollisionShape2D.set_deferred("disabled", true)
+
+
+func _on_BulletTimer_timeout():
+	var bullet = PlayerBullet.instance()
+	add_child(bullet)
+	bullet.position = Vector2(0, -radius_y)
