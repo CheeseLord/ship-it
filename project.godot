@@ -22,6 +22,7 @@ config/icon="res://icon.png"
 
 window/size/width=450
 window/size/height=800
+window/name="Ship It"
 
 [rendering]
 
