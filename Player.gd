@@ -1,6 +1,6 @@
 extends Area2D
 
-#signal hit
+signal hit
 
 
 # Declare member variables here. Examples:
@@ -43,7 +43,7 @@ func _process(delta):
 	position.y = clamp(position.y, radius_y, screen_size.y - radius_y)
 
 
-#func _on_Player_body_entered(_body):
+func _on_Player_body_entered(_body):
 #	hide()
-#	emit_signal("hit")
+	emit_signal("hit")
 #	$CollisionShape2D.set_deferred("disabled", true)
