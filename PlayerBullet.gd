@@ -1,7 +1,7 @@
 extends Area2D
 
 
-var speed = 100
+var speed = 800
 var direction = Vector2(0, -1)
 var damage = 100
 
