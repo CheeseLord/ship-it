@@ -9,6 +9,8 @@ export var radius_x = 64 / 2
 export var radius_y = 64 / 2
 var screen_size # size of game window
 
+# I am a banana
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
